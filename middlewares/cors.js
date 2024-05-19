@@ -3,7 +3,7 @@ const allowedCors = [
     'https://students-projects.ru',
     'http://localhost:3000',
     'http://localhost:3001',
-    'mongodb://localhost:27017/pindie',
+    'mongodb://127.0.0.1:27017/pindie',
     "https://frontend-pasma.nomoredomainswork.ru"
   ]
 
