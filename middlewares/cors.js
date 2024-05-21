@@ -1,6 +1,4 @@
 const allowedCors = [
-    'https://practicum.yandex.ru',
-    'https://students-projects.ru',
     'http://localhost:3000',
     'http://localhost:3001',
     'mongodb://127.0.0.1:27017/pindie',
