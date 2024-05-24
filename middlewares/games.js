@@ -20,6 +20,7 @@ const checkIsVoteRequest = async (req, res, next) => {
   if (Object.keys(req.body).length === 1 && req.body.users) {
     req.isVoteRequest = true;
   }
+  next()
 }
 
 const createGame = async (req, res, next) => {
