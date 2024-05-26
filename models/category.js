@@ -4,6 +4,7 @@ const mongoose = require('mongoose')
     name: {
       type: String,
       required: true,
+      unique: true,
     },
   });
 
