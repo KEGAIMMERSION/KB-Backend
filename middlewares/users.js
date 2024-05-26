@@ -4,7 +4,7 @@ const bcrypt = require("bcryptjs")
 
 const findAllUsers = async(req, res, next ) => {
     req.usersArray = await users.find({})
-    next()
+  next()
 }
 
 const createUser = async (req, res, next) => {
