@@ -3,7 +3,7 @@ const users = require("../models/user")
 const bcrypt = require("bcryptjs")
 
 const findAllUsers = async(req, res, next ) => {
-    req.usersArray = await users.find({}, {password: 0})
+    req.usersArray = await users.find({})
     next()
 }
 
@@ -21,7 +21,7 @@ const createUser = async (req, res, next) => {
 
 const findUserById = async(req, res, next) => {
   try{
-      req.user = await users.findById(req.params.id, {password: 0})
+      req.user = await users.findById(req.params.id)
     next()
   }catch(error){
     res.setHeader("Content-Type", "application/json")
